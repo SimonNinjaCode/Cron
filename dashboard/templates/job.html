@@ -1,0 +1,102 @@
+{% extends "base.html" %}
+{% block title %}{{ name }} — Delphi{% endblock %}
+
+{% block content %}
+<div style="display:flex; align-items:center; gap:8px; font-size:13px; color:var(--text-muted); margin-bottom:24px; flex-wrap:wrap;">
+  <a href="/jobs"
+     style="color:var(--text-muted); text-decoration:none;"
+     onmouseover="this.style.color='var(--text-primary)'" onmouseout="this.style.color='var(--text-muted)'">
+    &larr; Jobs
+  </a>
+  <span>/</span>
+  <span style="color:var(--text-primary); font-weight:500;">{{ name }}</span>
+  {% if cron %}
+  <span style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#555; margin-left:4px;">{{ cron }}</span>
+  {% endif %}
+  {% if is_active %}
+  <span class="badge badge-success">active</span>
+  {% elif is_local %}
+  <span class="badge badge-neutral">local only</span>
+  {% endif %}
+</div>
+
+{% if cadence %}
+<p style="font-size:12px; color:var(--text-muted); margin-bottom:20px;">{{ cadence }}</p>
+{% endif %}
+
+<!-- Tab bar -->
+<div class="tab-bar">
+  {% if mmd_content %}
+  <button onclick="showTab('diagram')" id="tab-diagram" class="tab-btn active">Workflow</button>
+  {% endif %}
+  {% if prompt_html %}
+  <button onclick="showTab('prompt')" id="tab-prompt" class="tab-btn {% if not mmd_content %}active{% endif %}">Prompt</button>
+  {% endif %}
+  <button onclick="showTab('outputs')" id="tab-outputs" class="tab-btn {% if not mmd_content and not prompt_html %}active{% endif %}">
+    Outputs{% if outputs %} ({{ outputs | length }}){% endif %}
+  </button>
+</div>
+
+<!-- Workflow diagram -->
+{% if mmd_content %}
+<div id="pane-diagram" class="tab-pane">
+  <div class="diagram-wrap">
+    <div class="mermaid">{{ mmd_content }}</div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Prompt -->
+{% if prompt_html %}
+<div id="pane-prompt" class="tab-pane" {% if mmd_content %}style="display:none"{% endif %}>
+  <div class="card" style="padding:28px 36px;">
+    <div class="md-prose">{{ prompt_html | safe }}</div>
+  </div>
+</div>
+{% endif %}
+
+<!-- Outputs -->
+<div id="pane-outputs" class="tab-pane" style="display:none">
+  {% if outputs %}
+  <div class="card">
+    <table>
+      <thead>
+        <tr>
+          <th style="width:130px;">Date</th>
+          <th>File</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for o in outputs %}
+        <tr>
+          <td style="font-family:'JetBrains Mono',monospace; font-size:12px; white-space:nowrap; color:var(--text-muted);">
+            {{ o.date }}
+          </td>
+          <td>
+            <a href="/view?path={{ o.rel | urlquote }}"
+               style="color:var(--text-secondary); font-size:13px; text-decoration:none;"
+               onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-secondary)'">
+              {{ o.filename }}
+            </a>
+          </td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+  {% else %}
+  <div style="color:var(--text-muted); font-size:13px; padding:20px 0;">No outputs yet.</div>
+  {% endif %}
+</div>
+
+<script>
+  function showTab(name) {
+    document.querySelectorAll('.tab-pane').forEach(p => p.style.display = 'none');
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    const pane = document.getElementById('pane-' + name);
+    const btn  = document.getElementById('tab-' + name);
+    if (pane) pane.style.display = '';
+    if (btn)  btn.classList.add('active');
+  }
+</script>
+{% endblock %}

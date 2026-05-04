@@ -1,0 +1,9 @@
+graph TD
+    A([1st of month 06:00]) --> B[WebFetch https://mc.merill.net/\nGet most recent ~150 items]
+    B --> C[Parallel WebSearch site:mc.merill.net\nPurview, Defender, Entra, Intune, Edge, sensitivity label]
+    C --> D[Filter to security & compliance\nDrop productivity-only items]
+    D --> E[Scope to previous calendar month\npublished date OR in-month milestone]
+    E --> F[Classify per-item fields\nDate, Title, Service, Category, Type, Summary, Link]
+    F --> G[Write sorted table\nAscending by Date]
+    G --> H[Highlight Action Required items\nwith deadlines]
+    H --> I[Write to Message Center Digest-YYYY-MM-DD.md]

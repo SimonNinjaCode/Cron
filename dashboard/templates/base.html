@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{% block title %}Delphi{% endblock %}</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: 'dark',
+      flowchart: { curve: 'linear', padding: 20 },
+      fontSize: 14,
+    });
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg-0: #0a0a0a;
+      --bg-1: #111111;
+      --bg-2: #161616;
+      --bg-3: #1c1c1c;
+      --bg-4: #242424;
+      --border: #2a2a2a;
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --text-muted: #475569;
+      --accent: #f59e0b;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+    }
+
+    html, body {
+      background: var(--bg-0);
+      color: var(--text-primary);
+      font-family: 'Inter', system-ui, sans-serif;
+      font-size: 14px;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+    }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3a3a3a; }
+
+    /* Nav */
+    nav {
+      background: var(--bg-1);
+      border-bottom: 1px solid var(--border);
+      height: 48px;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      gap: 0;
+      position: sticky;
+      top: 0;
+      z-index: 50;
+    }
+    .nav-brand {
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text-primary);
+      letter-spacing: -0.02em;
+      text-decoration: none;
+      margin-right: 28px;
+    }
+    .nav-links { display: flex; align-items: center; gap: 2px; flex: 1; min-width: 0; }
+    .nav-links-right {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-left: auto;
+      padding-left: 16px;
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      padding: 5px 10px;
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: all 0.15s;
+      border-bottom: 1px solid transparent;
+    }
+    .nav-link:hover { background: var(--bg-3); }
+    .nav-link.active {
+      font-weight: 500;
+      color: var(--accent);
+      background: var(--bg-3);
+      border-bottom-color: var(--accent);
+    }
+    .nav-clock {
+      color: #3a3a3a;
+      font-size: 12px;
+      font-family: 'JetBrains Mono', monospace;
+      user-select: none;
+      min-width: 64px;
+    }
+
+    /* Layout */
+    main { padding: 32px 24px; max-width: 1400px; margin: 0 auto; }
+
+    /* Cards */
+    .card {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+    }
+
+    /* Buttons / badges */
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+    .badge-success { background: #052e16; color: #4ade80; border: 1px solid #166534; }
+    .badge-error   { background: #2d0a0a; color: #f87171; border: 1px solid #7f1d1d; }
+    .badge-neutral { background: var(--bg-3); color: var(--text-muted); border: 1px solid var(--border); }
+    .badge-accent  { background: #451a0333; color: var(--accent); border: 1px solid #78350f55; }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; }
+    th {
+      background: var(--bg-2);
+      color: var(--text-secondary);
+      padding: 10px 14px;
+      text-align: left;
+      font-size: 11px;
+      font-weight: 500;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border-bottom: 1px solid var(--border);
+    }
+    td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--bg-3);
+      color: var(--text-secondary);
+      vertical-align: top;
+    }
+    tr:last-child td { border-bottom: none; }
+    tr:hover td { background: var(--bg-2); }
+
+    /* Tabs */
+    .tab-bar { display: flex; gap: 2px; border-bottom: 1px solid var(--border); margin-bottom: 20px; }
+    .tab-btn {
+      padding: 7px 14px;
+      border-radius: 6px 6px 0 0;
+      border: 1px solid transparent;
+      border-bottom: none;
+      font-size: 13px;
+      font-weight: 400;
+      color: var(--text-muted);
+      background: transparent;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .tab-btn:hover { color: var(--text-secondary); background: var(--bg-2); }
+    .tab-btn.active {
+      color: var(--accent);
+      background: var(--bg-1);
+      border-color: var(--border);
+      font-weight: 500;
+    }
+
+    /* Markdown prose */
+    .md-prose h1, .md-prose h2, .md-prose h3, .md-prose h4 {
+      color: var(--text-primary); font-weight: 600; margin-top: 1.5rem; margin-bottom: 0.5rem;
+    }
+    .md-prose h1 { font-size: 1.5rem; }
+    .md-prose h2 { font-size: 1.2rem; border-bottom: 1px solid var(--border); padding-bottom: 0.4rem; }
+    .md-prose h3 { font-size: 1.05rem; color: #cbd5e1; }
+    .md-prose p { color: var(--text-secondary); line-height: 1.7; margin-bottom: 0.75rem; }
+    .md-prose ul, .md-prose ol { color: var(--text-secondary); padding-left: 1.5rem; margin-bottom: 0.75rem; }
+    .md-prose li { margin-bottom: 0.25rem; line-height: 1.6; }
+    .md-prose code {
+      background: var(--bg-3); border: 1px solid var(--border); border-radius: 4px;
+      padding: 0.1em 0.4em; font-family: 'JetBrains Mono', monospace; font-size: 0.85em; color: #67e8f9;
+    }
+    .md-prose pre {
+      background: var(--bg-1); border: 1px solid var(--border); border-radius: 8px;
+      padding: 1rem; overflow-x: auto; margin-bottom: 1rem;
+    }
+    .md-prose pre code { background: none; border: none; padding: 0; color: #e2e8f0; }
+    .md-prose blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; color: #64748b; margin: 1rem 0; }
+    .md-prose a { color: var(--text-secondary); text-decoration: underline; }
+    .md-prose strong { color: #e2e8f0; font-weight: 600; }
+    .md-prose hr { border: none; border-top: 1px solid var(--border); margin: 1.5rem 0; }
+    .md-prose table { margin-bottom: 1rem; }
+    .md-prose th {
+      background: var(--bg-2); color: var(--text-primary); padding: 8px 12px;
+      font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.05em; border-bottom: 1px solid var(--border);
+      font-weight: 600;
+    }
+    .md-prose td { padding: 8px 12px; color: var(--text-secondary); border-bottom: 1px solid var(--bg-3); font-size: 0.9rem; }
+    .md-prose tr:hover td { background: var(--bg-2); }
+
+    /* Pygments */
+    .highlight { border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border); }
+    .highlight pre { margin: 0; padding: 1.25rem; font-family: 'JetBrains Mono', monospace; font-size: 0.83rem; line-height: 1.6; overflow-x: auto; }
+
+    /* Mermaid diagram container */
+    .diagram-wrap {
+      background: var(--bg-1);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 2rem;
+      overflow-x: auto;
+    }
+    .diagram-wrap .mermaid {
+      display: inline-block;
+      min-width: 100%;
+    }
+    .diagram-wrap svg {
+      display: block;
+      height: auto;
+      min-width: 600px;
+    }
+  </style>
+  {% block head %}{% endblock %}
+</head>
+<body>
+
+  <nav>
+    <a href="/" class="nav-brand">Delphi</a>
+    <div class="nav-links">
+      <a href="/jobs" class="nav-link {% if request.path == '/jobs' or request.path == '/job' %}active{% endif %}">Jobs</a>
+      <a href="/outputs" class="nav-link {% if request.path == '/outputs' %}active{% endif %}">Outputs</a>
+    </div>
+    <div class="nav-links-right">
+      <a href="https://claude.ai/code/routines" target="_blank" rel="noopener" class="nav-link" title="View remote routine status on claude.ai">Routines ↗</a>
+    </div>
+    <div class="nav-clock" id="clock"></div>
+  </nav>
+
+  <main>
+    {% block content %}{% endblock %}
+  </main>
+
+  <script>
+    function tick() {
+      document.getElementById('clock').textContent =
+        new Date().toLocaleTimeString('en-GB', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+    }
+    tick();
+    setInterval(tick, 1000);
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+graph TD
+    A([1st of month 07:00 Stockholm]) --> B[WebFetch 12 Microsoft Learn 'What's new' pages]
+    B --> B1[Entra ID]
+    B --> B2[Defender XDR / Endpoint / Identity]
+    B --> B3[Defender for Office 365 / Cloud Apps / Vuln Mgmt]
+    B --> B4[Intune / Sentinel / Defender for Cloud / Purview]
+    B1 & B2 & B3 & B4 --> C[Scope strictly to previous calendar month]
+    C --> D[Extract items per service]
+    D --> E[Build table per service\nTitle, Category, License, Release type, Description, URL, Go-live]
+    E --> F[Write organised by service in source order]
+    F --> G[Write to M365 Security Whats New-YYYY-MM-DD.md]

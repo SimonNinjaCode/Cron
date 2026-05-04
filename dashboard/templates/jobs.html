@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% block title %}Jobs — Delphi{% endblock %}
+
+{% block content %}
+<h1 style="font-size:1.25rem; font-weight:600; color:var(--text-primary); margin-bottom:24px;">Jobs</h1>
+
+<div style="display:grid; grid-template-columns:repeat(auto-fill, minmax(300px, 1fr)); gap:12px;">
+  {% for j in jobs %}
+  <a href="/job?name={{ j.name | urlquote }}"
+     style="display:block; background:var(--bg-1); border:1px solid var(--border); border-radius:var(--radius-md); padding:18px 20px; text-decoration:none; transition:border-color 0.15s, background 0.15s;"
+     onmouseover="this.style.borderColor='#f59e0b44'; this.style.background='var(--bg-2)'"
+     onmouseout="this.style.borderColor='var(--border)'; this.style.background='var(--bg-1)'">
+
+    <div style="display:flex; align-items:flex-start; justify-content:space-between; gap:8px; margin-bottom:10px;">
+      <span style="font-size:13px; font-weight:500; color:var(--text-primary); line-height:1.4;">{{ j.name }}</span>
+      {% if j.is_active %}
+      <span class="badge badge-success" style="flex-shrink:0;">active</span>
+      {% elif j.is_local %}
+      <span class="badge badge-neutral" style="flex-shrink:0;">local only</span>
+      {% else %}
+      <span class="badge badge-neutral" style="flex-shrink:0;">{{ j.status }}</span>
+      {% endif %}
+    </div>
+
+    {% if j.cadence %}
+    <div style="font-size:12px; color:var(--text-muted); margin-bottom:4px;">{{ j.cadence }}</div>
+    {% endif %}
+
+    {% if j.cron %}
+    <div style="font-family:'JetBrains Mono',monospace; font-size:11px; color:#555; margin-bottom:10px;">{{ j.cron }}</div>
+    {% endif %}
+
+    <div style="display:flex; align-items:center; gap:6px; flex-wrap:wrap;">
+      {% if j.has_diagram %}
+      <span class="badge badge-accent">diagram</span>
+      {% endif %}
+      {% if j.has_prompt %}
+      <span class="badge badge-accent">prompt</span>
+      {% endif %}
+      {% if j.output_count > 0 %}
+      <span class="badge badge-neutral">{{ j.output_count }} output{{ 's' if j.output_count != 1 }}</span>
+      {% endif %}
+      {% if j.latest_date %}
+      <span style="font-size:11px; color:var(--text-muted); margin-left:auto; font-family:'JetBrains Mono',monospace;">{{ j.latest_date }}</span>
+      {% endif %}
+    </div>
+
+  </a>
+  {% endfor %}
+</div>
+{% endblock %}

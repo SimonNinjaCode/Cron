@@ -1,0 +1,13 @@
+graph TD
+    A([1st of month 08:00 Stockholm]) --> B[WebSearch 5 threat intelligence sources]
+    B --> B1[The Hacker News]
+    B --> B2[Ars Technica]
+    B --> B3[Dark Reading]
+    B --> B4[BleepingComputer]
+    B --> B5[Microsoft Threat Intelligence blog]
+    B1 & B2 & B3 & B4 & B5 --> C[Scope to previous calendar month\nFall back 1–2 months if needed]
+    C --> D[Select top 2 M365-relevant insights per source]
+    D --> E[Fetch full article content via WebFetch]
+    E --> F[Map to MITRE ATT&CK, Zero Trust pillars, MCRA]
+    F --> G[Write two structured tables per source\nTitle, Threat Actor, Risk, Call to Action, Source]
+    G --> H[Write to M365 Threat Intelligence Report-YYYY-MM-DD.md]

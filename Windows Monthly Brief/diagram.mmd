@@ -1,0 +1,8 @@
+graph TD
+    A([1st of month 09:00 Stockholm]) --> B[WebFetch Windows roadmap\nmicrosoft.com/en-us/windows/business/roadmap]
+    B --> C[Filter: Windows 11 PC, Feature type, Retail edition]
+    C --> D[List features new or changed status\nin previous calendar month]
+    D --> E[Parallel WebFetch — update history pages\nfor current + 2 prior supported Windows 11 versions]
+    E --> F[Extract per-version patches\nSecurity update Patch Tuesday + non-security preview]
+    F --> G[For each patch: release date, KB number, OS build, support link]
+    G --> H[Write to Windows Monthly Brief-YYYY-MM-DD.md]
