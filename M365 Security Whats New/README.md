@@ -7,7 +7,7 @@
 
 ## Description
 
-Extracts and summarises security & compliance updates from 12 Microsoft Learn "What's new" / release notes pages. Scoped strictly to the previous calendar month. Output is organised by service, one table per service, covering title, category, license requirement, release type, description, URL, and go-live date.
+Extracts and summarises security & compliance updates from 12 Microsoft Learn "What's new" / release notes pages. Scoped strictly to the previous calendar month. Output is organised by service, one table per service, covering title, service, category, type, summary, date, and link.
 
 ## Sources
 
@@ -24,7 +24,7 @@ graph TD
     B --> B4[Intune / Sentinel / Defender for Cloud / Purview]
     B1 & B2 & B3 & B4 --> C[Scope strictly to previous calendar month]
     C --> D[Extract items per service]
-    D --> E[Build table per service\nTitle, Category, License, Release type, Description, URL, Go-live]
+    D --> E[Build table per service\nTitle, Service, Category, Type, Summary, Date, Link]
     E --> F[Write organised by service in source order]
     F --> G[Write to M365 Security Whats New-YYYY-MM-DD.md]
     G --> H[Append row to runs.md]
@@ -68,22 +68,17 @@ Act as a Microsoft cloud security research assistant. Extract and summarize the 
 
 ### Required table columns (exact order)
 
-Title, Category, License requirement, Release type, Service, Description, URL, Golive/Deadline
+Title, Service, Category, Type, Summary, Date, Link
 
 #### Column rules
 
 1. **Title** — Use the official feature/change title. If absent, derive a concise descriptive title from the bullet/paragraph.
-2. **Category** — Short functional category (e.g. Threat intelligence, UEBA, Endpoint hardening, DLP, AI security, Exposure management, Compliance / benchmark, Containers, DevSecOps, API security, Insider Risk Management).
-3. **License requirement** — CRITICAL: only place license info in this column, never elsewhere in the row.
-   - If the article explicitly mentions licensing/plan, use that wording.
-   - If not, give a high-level requirement based on product context without guessing SKUs (e.g. "Requires Microsoft Defender for Cloud").
-   - If even that is unclear: "Not specified in article; requires access to <Product>".
-   - Do not list specific commercial SKUs (E3/E5, P1/P2) unless the article does.
-4. **Release type** — Use exactly one of: Preview, GA, Update, Deprecation, Upcoming change. Follow the doc's explicit state when given. If unclear and it's a new live capability, use GA. Use Update for doc/UX restructures.
-5. **Service** — Must reflect the source page's product name. Do not change to "Copilot"/other workloads even if the feature touches them.
-6. **Description** — 1–3 concise sentences explaining what changes and why it matters for security/compliance. Do not repeat the title verbatim. Do not include licensing here.
-7. **URL** — Use the base "What's new" / release notes page URL from which the item was taken.
-8. **Golive/Deadline** — Use the date associated with the item. YYYY-MM-DD if shown. For deprecations/upcoming changes, use the effective/deadline date if stated. If only the month is given, use "<Month Year>".
+2. **Service** — Must reflect the source page's product name. Do not change to "Copilot"/other workloads even if the feature touches them.
+3. **Category** — Short functional category (e.g. Threat intelligence, UEBA, Endpoint hardening, DLP, AI security, Exposure management, Compliance / benchmark, Containers, DevSecOps, API security, Insider Risk Management).
+4. **Type** — Use exactly one of: Preview, GA, Update, Deprecation, Upcoming change. Follow the doc's explicit state when given. If unclear and it's a new live capability, use GA. Use Update for doc/UX restructures.
+5. **Summary** — 1–3 concise sentences explaining what changes and why it matters for security/compliance. Do not repeat the title verbatim.
+6. **Date** — Use the date associated with the item. YYYY-MM-DD if shown. For deprecations/upcoming changes, use the effective/deadline date if stated. If only the month is given, use "<Month Year>".
+7. **Link** — Use the base "What's new" / release notes page URL from which the item was taken.
 
 ### Output structure
 
@@ -94,3 +89,7 @@ Title, Category, License requirement, Release type, Service, Description, URL, G
 ### Output file
 
 Save the report as `M365 Security Whats New-YYYY-MM-DD.md` where the date is today's run date.
+
+### Git
+
+After saving the file, commit it directly to main with the message `Add M365 Security Whats New YYYY-MM-DD` and push to origin. Do not open a pull request — push straight to main.
