@@ -7,7 +7,7 @@
 
 ## Description
 
-Monthly digest of Microsoft 365 Message Center security & compliance items for the previous calendar month. Sources from the public mc.merill.net aggregator via WebFetch and targeted web_search (site:mc.merill.net). Produces a sorted table of all in-scope items with Action Required deadlines highlighted.
+Rolling 30-day digest of Microsoft 365 Message Center security & compliance items, covering the 30 days ending on the run date. Sources from the public mc.merill.net aggregator via WebFetch and targeted web_search (site:mc.merill.net). Produces a sorted table of all in-scope items with Action Required deadlines highlighted.
 
 ## Filter
 
@@ -31,7 +31,7 @@ graph TD
 
 ## Prompt
 
-Produce a monthly Microsoft 365 Message Center digest focused on **security & compliance** for the calendar month that just ended (i.e. when this runs on the 1st of month M, report on month M-1). Use Europe/Berlin local time to determine the reporting month and the run date.
+Produce a Microsoft 365 Message Center digest focused on **security & compliance** for the **rolling 30-day window ending on the run date** (i.e. from run_date − 30 days through run_date, inclusive). First, run `date` to get today's date. Use Europe/Berlin local time to determine the run date and calculate the window start (run_date − 30 days).
 
 ### Agent Grounding
 
@@ -43,18 +43,18 @@ Use these sources as tools for this job:
 ### Data sources
 
 1. Fetch the homepage `https://mc.merill.net/` with web_fetch — it lists the most recent ~150 items with Published / Last Updated dates.
-2. For coverage of items earlier in the month than the homepage shows, use parallel `web_search` calls with the `site:mc.merill.net` operator, e.g. `site:mc.merill.net Microsoft Purview April 2026`, `site:mc.merill.net "Defender for Office 365" April 2026`, `site:mc.merill.net Microsoft Entra April 2026`, `site:mc.merill.net Microsoft Intune April 2026`, `site:mc.merill.net Microsoft Edge security April 2026`, `site:mc.merill.net sensitivity label April 2026`. Per-item URL pattern is `https://mc.merill.net/message/<ID>` (works for both MC and RM IDs).
+2. For coverage of items earlier in the window than the homepage shows, use parallel `web_search` calls with the `site:mc.merill.net` operator. If the 30-day window spans two calendar months (e.g. window = May 13 – Jun 12), run searches for **both** months. Example queries (substitute the actual month names): `site:mc.merill.net Microsoft Purview May 2026`, `site:mc.merill.net Microsoft Purview June 2026`, `site:mc.merill.net "Defender for Office 365" May 2026`, `site:mc.merill.net Microsoft Entra May 2026`, `site:mc.merill.net Microsoft Intune May 2026`, `site:mc.merill.net Microsoft Edge security May 2026`, `site:mc.merill.net sensitivity label May 2026`. Per-item URL pattern is `https://mc.merill.net/message/<ID>` (works for both MC and RM IDs).
 3. NOTE: web_fetch does NOT work on `messages-index.json`, `llms.txt`, service-specific archive pages, or pagination URLs. Use the homepage + web_search-with-site-operator approach.
 
 ### Filter (focus = security & compliance)
 
 Include items where the **primary impact** is security, identity, data protection, threat protection, compliance, or endpoint security. Tracked services: Microsoft Purview, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Entra, Microsoft Intune, Microsoft Edge (security/MAM features only), Exchange Online (only sec/compliance items like DLP, transport security, certs), Microsoft Teams (only sec/compliance items: sensitivity-label inheritance, encryption, external-presenter auth, download controls), Microsoft 365 suite (only platform-security items: cert distrust, Secure Boot, Conditional Access, Autopatch security defaults). Drop productivity-only items (meeting UX, reactions, Loop social features, mobile RSVP polish, etc.).
 
-Include items where the published date OR a material rollout milestone (GA, preview, opt-out availability, enforcement start) falls inside the reporting month.
+Include items where the published date OR a material rollout milestone (GA, preview, opt-out availability, enforcement start) falls inside the 30-day window.
 
 ### Per-item fields
 
-- **Date**: YYYY-MM-DD — published date if in-month, otherwise the in-month milestone date.
+- **Date**: YYYY-MM-DD — published date if it falls in the window, otherwise the in-window milestone date.
 - **Title**: short human-readable feature name (4–10 words). Strip leading "Microsoft <service>:" prefix.
 - **Service**: e.g. Microsoft Purview, Microsoft Defender XDR, Microsoft Entra, Microsoft Intune, Microsoft Edge, Microsoft 365 suite.
 - **Category**: pick one — Data Protection & Compliance, Identity & Access, Email Security, Endpoint Security, Threat Protection, Platform Security.
