@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Security — What's New
 
 **Cadence:** Monthly — 1st of month at 07:00 Stockholm  
@@ -89,6 +94,17 @@ Title, Service, Category, Type, Summary, Date, Link
 ### Output file
 
 Save the report as `M365 Security Whats New-YYYY-MM-DD.md` where the date is today's run date.
+
+Start the file with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.
 
 ### Git
 

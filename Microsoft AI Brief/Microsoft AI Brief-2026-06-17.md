@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief
 **Week of 10–17 June 2026**
 

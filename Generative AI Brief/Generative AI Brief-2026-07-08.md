@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — 8 July 2026
 
 *Enterprise intelligence on the AI developments that matter. Covering 1–8 July 2026.*

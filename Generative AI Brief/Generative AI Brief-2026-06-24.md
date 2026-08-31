@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — June 24, 2026
 
 *Enterprise AI intelligence for the week ending June 24, 2026*

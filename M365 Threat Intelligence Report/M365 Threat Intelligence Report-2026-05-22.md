@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Threat Intelligence Report — 2026-05-22
 
 **Target Month:** April 2026 | **Compiled:** 2026-05-22 | **Audience:** Security Architects · SOC Leads · Cyber Leadership

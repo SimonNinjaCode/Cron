@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Security — What's New
 
 **Report period:** July 2026 – August 2026 (rolling 30-day window: 2026-07-14 → 2026-08-13)

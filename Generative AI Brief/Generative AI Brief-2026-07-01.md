@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — July 1, 2026
 
 *Enterprise-focused coverage of the past 7 days in AI*

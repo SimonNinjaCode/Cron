@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — 5 August 2026
 
 *Enterprise AI intelligence for IT, security, and compliance teams*

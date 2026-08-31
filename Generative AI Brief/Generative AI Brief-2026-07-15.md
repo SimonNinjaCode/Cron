@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — 15 July 2026
 
 *Enterprise-focused. Covering the 7 days ending 15 July 2026.*

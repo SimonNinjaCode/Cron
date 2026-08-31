@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Security What's New – May 16 through June 15, 2026
 
 **Run date:** 2026-06-15 (Europe/Berlin) | **Window:** 2026-05-16 – 2026-06-15 | **Sources:** 12 Microsoft Learn "What's new" pages

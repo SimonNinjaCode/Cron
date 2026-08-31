@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Cybersecurity News & Changes - April 2026
 
 This report summarizes Microsoft cloud security and compliance updates explicitly listed under the April 2026 section of each official Microsoft Learn "What's new" / release notes page. Sources covered: Microsoft Defender XDR, Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Defender Vulnerability Management, Defender for Cloud, Microsoft Sentinel, Microsoft unified security operations, Microsoft Intune, Microsoft Entra ID, and Microsoft Purview.

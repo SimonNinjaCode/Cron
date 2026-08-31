@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Threat Intelligence Report — April 2026
 
 **Report Date:** 2026-05-10 | **Target Month:** April 2026

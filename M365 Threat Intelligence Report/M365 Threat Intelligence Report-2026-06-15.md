@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Threat Intelligence Report — May 2026
 
 **Run Date:** 2026-06-15\

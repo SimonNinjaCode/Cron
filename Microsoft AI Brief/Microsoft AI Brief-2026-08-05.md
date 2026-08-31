@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 5 August 2026
 
 *Enterprise intelligence on Microsoft AI. Covering 30 July – 5 August 2026.*

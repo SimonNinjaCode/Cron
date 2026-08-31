@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 29 July 2026
 
 *Enterprise-focused coverage of Microsoft AI developments. Period: 22–29 July 2026.*

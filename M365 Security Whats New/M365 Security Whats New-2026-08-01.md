@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Security — What's New: July 2026
 
 Rolling 30-day window: **2026-07-02 through 2026-08-01** (run date 2026-08-01, Europe/Berlin). Sources: Microsoft Learn "What's new" pages for all 12 services listed below.

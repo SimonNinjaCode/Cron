@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Patch Tuesday Review
 
 **Cadence:** Monthly — 2nd Tuesday at 08:00 Stockholm  
@@ -80,3 +85,14 @@ Generate the monthly Microsoft Patch Tuesday review for the current month and de
 ### Output file
 
 Save the report as `Patch Tuesday Review-YYYY-MM-DD.md` where the date is today's run date.
+
+Start the file with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.

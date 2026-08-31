@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief
 ## June 17, 2026 | Enterprise Edition
 

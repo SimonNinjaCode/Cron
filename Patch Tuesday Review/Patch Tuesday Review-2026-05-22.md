@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft Patch Tuesday Review — May 2026
 
 _Generated 2026-05-22_

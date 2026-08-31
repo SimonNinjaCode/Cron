@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Threat Intelligence Report — 2026-07-01
 
 **Report Period:** June 2026 (fallbacks to May/March 2026 where noted)

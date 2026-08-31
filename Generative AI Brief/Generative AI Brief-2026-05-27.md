@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — 27 May 2026
 
 *Enterprise-focused intelligence on the week's AI developments. Coverage period: 20–27 May 2026.*

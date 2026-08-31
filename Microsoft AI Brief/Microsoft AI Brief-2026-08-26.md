@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 26 August 2026
 
 *Enterprise coverage of Microsoft AI developments, week ending 26 August 2026.*

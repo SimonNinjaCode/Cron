@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Threat Intelligence Report
 
 **Cadence:** Monthly — 1st of month at 08:00 Stockholm  
@@ -85,3 +90,14 @@ Final answer: 5 sources × 2 insights = 10 insight tables, plus an executive sum
 ### Output file
 
 Save the report as `M365 Threat Intelligence Report-YYYY-MM-DD.md` where the date is today's run date.
+
+Start the file with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.

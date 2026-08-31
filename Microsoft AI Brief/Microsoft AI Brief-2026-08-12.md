@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 12 August 2026
 
 *Enterprise coverage of Microsoft AI developments. This edition covers the seven days to 12 August 2026.*

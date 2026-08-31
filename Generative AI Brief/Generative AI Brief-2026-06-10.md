@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — June 10, 2026
 
 > Enterprise AI intelligence for IT, security, and compliance teams. Covers the seven days ending June 10, 2026.

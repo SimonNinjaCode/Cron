@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 27 May 2026
 
 *Enterprise intelligence on Microsoft AI. Coverage period: 20–27 May 2026.*

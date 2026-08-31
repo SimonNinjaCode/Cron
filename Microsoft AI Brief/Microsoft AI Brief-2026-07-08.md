@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief
 ### 8 July 2026 | Coverage: 1–8 July 2026
 

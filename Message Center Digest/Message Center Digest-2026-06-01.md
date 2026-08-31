@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft 365 Message Center Digest — Security & Compliance
 **Reporting period: May 2026 | Generated: 2026-06-01**
 

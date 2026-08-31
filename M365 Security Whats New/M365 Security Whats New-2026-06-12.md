@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # M365 Security What's New – May 2026
 
 **Target month:** May 2026 | **Run date:** 2026-06-12

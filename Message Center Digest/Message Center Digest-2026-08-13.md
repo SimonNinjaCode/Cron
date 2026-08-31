@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft 365 Message Center Digest -- Security & Compliance
 
 Period: 2026-07-14 through 2026-08-13 (Europe/Berlin)

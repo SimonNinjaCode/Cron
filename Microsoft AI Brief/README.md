@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief
 
 **Cadence:** Weekly — every Wednesday at 09:00 Stockholm  
@@ -61,3 +66,14 @@ Step 3 — Fetch full content for the top 5–7 stories.
 Step 4 — Write an enterprise-focused newsletter. For each story: what changed, what it means for enterprise IT/security teams, any action required or date to watch. Organise by priority category.
 
 Step 5 — Apply humaniser: remove AI writing patterns. Avoid: "delve", "it's worth noting", em-dash overuse, numbered lists where prose is more natural.
+
+Output requirements: save the report as `Microsoft AI Brief-YYYY-MM-DD.md`. Start the file with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.

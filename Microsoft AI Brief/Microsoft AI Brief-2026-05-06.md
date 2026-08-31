@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 6 May 2026
 
 **Period covered: 30 April – 6 May 2026**

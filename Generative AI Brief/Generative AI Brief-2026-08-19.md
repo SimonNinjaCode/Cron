@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief, 19 August 2026
 
 > Enterprise AI intelligence for the week of 12-19 August 2026

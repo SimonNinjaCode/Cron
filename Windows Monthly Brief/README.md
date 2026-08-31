@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Windows Monthly Brief
 
 **Cadence:** Monthly — 1st of month at 09:00 Stockholm  
@@ -31,3 +36,14 @@ Cover the current Windows 11 version plus the two prior supported versions (e.g.
 ### Output file
 
 Save the report as `Windows Monthly Brief-YYYY-MM-DD.md` where the date is today's run date.
+
+Start the file with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.

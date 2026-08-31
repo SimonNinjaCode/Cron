@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief
 
 **Cadence:** Weekly — every Wednesday at 08:00 Stockholm  
@@ -47,3 +52,16 @@ graph TD
 ## Prompt
 
 > Prompt not yet written. See diagram for process description.
+
+## GitBook output requirements
+
+Start every generated report with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.

@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft 365 Message Center Digest — Security & Compliance
 ## April 2026 | Run date: 2026-05-05
 

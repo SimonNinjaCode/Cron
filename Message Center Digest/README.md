@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Message Center Digest
 
 **Cadence:** Monthly — 1st of month at 06:00 Stockholm  
@@ -65,3 +70,14 @@ Include items where the published date OR a material rollout milestone (GA, prev
 ### Output file
 
 Save the report as `Message Center Digest-YYYY-MM-DD.md` where the date is today's run date.
+
+Start the file with this frontmatter:
+
+```yaml
+---
+layout:
+  width: wide
+---
+```
+
+Add the new report to `SUMMARY.md`, then run `bash scripts/check-gitbook.sh` before committing.

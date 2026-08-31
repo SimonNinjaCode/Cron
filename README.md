@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Cron
 
 Automated intelligence pipeline for Microsoft 365 security, threat intelligence, and AI news. Seven scheduled remote agents run on claude.ai and push their output back to this repo as dated markdown files.

@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — 6 May 2026
 
 **Period covered: 29 April – 6 May 2026**

@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 24 June 2026
 
 **Week ending 24 June 2026 | Enterprise AI Intelligence**
