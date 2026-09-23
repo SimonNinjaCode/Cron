@@ -35,6 +35,7 @@
   * [M365 Security — What's New](<M365 Security Whats New/M365 Security Whats New-2026-08-13.md>)
   * [M365 Security — What's New: August 2026](<M365 Security Whats New/M365 Security Whats New-2026-08-31.md>)
   * [M365 Security — What's New: August 2026 (Sep 1)](<M365 Security Whats New/M365 Security Whats New-2026-09-01.md>)
+  * [M365 Security — What's New: September 2026](<M365 Security Whats New/M365 Security Whats New-2026-09-23.md>)
 * [M365 Threat Intelligence Report](<M365 Threat Intelligence Report/README.md>)
   * [M365 Threat Intelligence Report — April 2026](<M365 Threat Intelligence Report/M365 Threat Intelligence Report-2026-05-10.md>)
   * [M365 Threat Intelligence Report — 2026-05-22](<M365 Threat Intelligence Report/M365 Threat Intelligence Report-2026-05-22.md>)
