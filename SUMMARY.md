@@ -20,6 +20,7 @@
   * [Generative AI Brief — 12 August 2026](<Generative AI Brief/Generative AI Brief-2026-08-12.md>)
   * [Generative AI Brief, 19 August 2026](<Generative AI Brief/Generative AI Brief-2026-08-19.md>)
   * [Generative AI Brief — 26 August 2026](<Generative AI Brief/Generative AI Brief-2026-08-26.md>)
+  * [Generative AI Brief — 23 September 2026](<Generative AI Brief/Generative AI Brief-2026-09-23.md>)
 * [M365 Security — What's New](<M365 Security Whats New/README.md>)
   * [Cybersecurity News & Changes - April 2026](<M365 Security Whats New/M365 Security Whats New-2026-05-04.md>)
   * [M365 Security — What's New: May 2026](<M365 Security Whats New/M365 Security Whats New-2026-06-01.md>)
