@@ -84,6 +84,7 @@
   * [Microsoft Patch Tuesday Review — July 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-07-14.md>)
   * [Microsoft Patch Tuesday review, August 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-08-14.md>)
   * [Microsoft Patch Tuesday Review — September 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-09-14.md>)
+  * [Microsoft Patch Tuesday Review — September 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-09-23.md>)
 * [Windows Monthly Brief](<Windows Monthly Brief/README.md>)
   * [Windows Monthly Brief — April 2026](<Windows Monthly Brief/Windows Monthly Brief-2026-05-11.md>)
   * [Windows Monthly Brief — May 2026](<Windows Monthly Brief/Windows Monthly Brief-2026-06-01.md>)
