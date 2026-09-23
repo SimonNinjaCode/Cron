@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Microsoft AI Brief — 9 September 2026
 
 *Enterprise-focused intelligence on Microsoft AI developments. Coverage period: 2 September – 9 September 2026.*

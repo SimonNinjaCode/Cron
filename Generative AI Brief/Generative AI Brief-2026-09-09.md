@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Generative AI Brief — 9 September 2026
 
 *Enterprise-focused intelligence covering the week of 2–9 September 2026.*

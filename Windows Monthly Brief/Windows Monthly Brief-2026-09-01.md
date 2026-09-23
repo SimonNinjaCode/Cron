@@ -1,3 +1,8 @@
+---
+layout:
+  width: wide
+---
+
 # Windows Monthly Brief — August 2026
 _Generated 2026-09-01_
 
