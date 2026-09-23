@@ -91,3 +91,4 @@
   * [Windows Monthly Brief — June 2026](<Windows Monthly Brief/Windows Monthly Brief-2026-07-01.md>)
   * [Windows Monthly Brief — July 2026](<Windows Monthly Brief/Windows Monthly Brief-2026-08-01.md>)
   * [Windows Monthly Brief — August 2026](<Windows Monthly Brief/Windows Monthly Brief-2026-09-01.md>)
+  * [Windows Monthly Brief — August 2026](<Windows Monthly Brief/Windows Monthly Brief-2026-09-23.md>)
