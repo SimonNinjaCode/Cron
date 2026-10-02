@@ -64,6 +64,7 @@
   * [Microsoft 365 Message Center — Security & Compliance Digest](<Message Center Digest/Message Center Digest-2026-08-31.md>)
   * [Microsoft 365 Message Center — Security & Compliance Digest](<Message Center Digest/Message Center Digest-2026-09-23.md>)
   * [Microsoft 365 Message Center — Security & Compliance Digest](<Message Center Digest/Message Center Digest-2026-10-01.md>)
+  * [Microsoft 365 Message Center — Security & Compliance Digest](<Message Center Digest/Message Center Digest-2026-10-02.md>)
 * [Microsoft AI Brief](<Microsoft AI Brief/README.md>)
   * [Prompt](<Microsoft AI Brief/PROMPT.md>)
   * [Exempel](<Microsoft AI Brief/EXAMPLES.md>)
