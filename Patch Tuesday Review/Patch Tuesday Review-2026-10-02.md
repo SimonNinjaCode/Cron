@@ -11,16 +11,16 @@ _Generated 2026-10-02_
 
 ## Summary
 
-- **Patch Tuesday-scope:** 973 unika CVE-ID:n med initialt releasedatum 8 september 2026 och minst en Microsoft-berörd produkt i CVRF. Urvalet matchar samtliga 973 CVE-ID:n i SANS-listan. Senare månadstillägg och poster utanför denna releaseavgränsning ingår inte.
+- **Patch Tuesday-scope:** 973 unika CVE-ID:n först publicerade 8 september 2026 enligt CVRF:s revision history, med angiven Microsoft-impact. Urvalet matchar samtliga 973 CVE-ID:n i SANS-listan. Senare månadstillägg och poster utanför denna releaseavgränsning ingår inte.
 - **Zero-days:** 2 aktivt utnyttjade; 0 offentligt kända före patch.
 - **Critical:** 113 enligt Microsofts högsta severity per CVE.
-- **Edge/Chromium:** 27 Chromium-relaterade CVE-poster finns i hela septemberdokumentets CVRF-snapshot. Det är inte ett fullständigt Edge-releaseantal; bredare Edge-täckning är okänd.
+- **Edge/Chromium:** 27 CVRF-poster med titelprefixet `Chromium:` finns i septemberdokumentets snapshot. Det är inte ett fullständigt Edge-releaseantal; bredare Edge-täckning är okänd.
 - **CVSS-konvention:** högsta bekräftade CVSS base score bland berörda produkter per CVE; inkludera vid CVSS ≥ 8.0 eller Microsoft severity Critical. SANS visar CVSS Base (AVG), varför enskilda CVE-värden kan avvika från MSRC:s högsta produktscore.
 - **Publisher totals:** BleepingComputer rapporterar 966 och CrowdStrike 972. De skiljer sig från den här avgränsade primärinventeringen om 973. Artiklarna använder egna omfattningar och deras siffror behålls som rapporterade; de förklarar inte differensen entydigt.
 
 ### Breakdown by type
 
-Microsofts impact-kategorier för de 973 CVE:erna summerar till 973. Chromium är en separat, överlappande produktvy från hela månadens CVRF och adderas inte till summan.
+Microsofts impact-kategorier för de 973 CVE:erna summerar till 973. Chromium-raden är ett separat titelbaserat urval från månadens CVRF och ingår inte i summan 973.
 
 | Typ | Antal |
 |---|---:|
@@ -31,7 +31,7 @@ Microsofts impact-kategorier för de 973 CVE:erna summerar till 973. Chromium ä
 | Denial of Service | 56 |
 | Spoofing | 16 |
 | Tampering | 13 |
-| Edge–Chromium (månadssnapshot, överlappande) | 27 |
+| Chromium:-titlar i månadssnapshot (separat) | 27 |
 
 ## Exploited in the Wild
 
@@ -45,6 +45,10 @@ Microsofts CVRF anger exploatering för båda posterna. Kundåtgärd bygger på 
 ## Publicly Disclosed
 
 Inga poster i det avgränsade urvalet har `Publicly Disclosed:Yes` i Microsofts CVRF. SANS anger också 0 sådana poster.
+
+| CVE | CVSS | Criticality | Title | Customer Action | Link |
+|---|---:|---|---|---|---|
+| Inga bekräftade | n/a | n/a | Inga poster med Publicly Disclosed:Yes | n/a | [MSRC CVRF](https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/2026-Sep) · [SANS](https://isc.sans.edu/diary/September%2B2026%2BMicrosoft%2BPatch%2BTuesday/33320) |
 
 ## Highest Rated — CVSS ≥ 8.0 or Critical
 

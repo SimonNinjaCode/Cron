@@ -3,6 +3,7 @@
 * [Cron](README.md)
 * [Gemensamma körinstruktioner](RUNBOOK.md)
 * [GitBook-anslutning](GITBOOK.md)
+* [Testprotokoll — 2026-10-02](TESTING.md)
 * [Generative AI Brief](<Generative AI Brief/README.md>)
   * [Prompt](<Generative AI Brief/PROMPT.md>)
   * [Exempel](<Generative AI Brief/EXAMPLES.md>)

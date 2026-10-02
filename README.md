@@ -43,6 +43,6 @@ scripts/                    # registrering och validering
 
 Codex-jobbens inställningar hanteras i Scheduled. De läser aktuell RUNBOOK.md och respektive PROMPT.md vid varje körning. jobs.json dokumenterar inställningarna, men ändringar där aktiveras inte automatiskt i Codex. Datorn måste vara vaken och Codex igång när lokala jobb körs.
 
-[Gemensamma körinstruktioner](RUNBOOK.md) · [GitBook-anslutning](GITBOOK.md)
+[Gemensamma körinstruktioner](RUNBOOK.md) · [GitBook-anslutning](GITBOOK.md) · [Testprotokoll 2026-10-02](TESTING.md)
 
 Historiska rapporter är bevarade från den tidigare miljön. De är exempel, inte omverifierade faktaunderlag eller bevis på lyckade Codex-körningar.
