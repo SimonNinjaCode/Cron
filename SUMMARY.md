@@ -102,6 +102,7 @@
   * [Microsoft Patch Tuesday review, August 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-08-14.md>)
   * [Microsoft Patch Tuesday Review — September 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-09-14.md>)
   * [Microsoft Patch Tuesday Review — September 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-09-23.md>)
+  * [Microsoft Patch Tuesday Review — September 2026](<Patch Tuesday Review/Patch Tuesday Review-2026-10-02.md>)
 * [Windows Monthly Brief](<Windows Monthly Brief/README.md>)
   * [Prompt](<Windows Monthly Brief/PROMPT.md>)
   * [Exempel](<Windows Monthly Brief/EXAMPLES.md>)
