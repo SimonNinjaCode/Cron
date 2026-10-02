@@ -21,7 +21,7 @@ Act as a Microsoft cloud security research assistant. Extract and summarize the 
 
 ### Allowed data sources (Microsoft Learn only)
 
-1. Entra ID – What's new overview: https://learn.microsoft.com/en-us/entra/fundamentals/whats-new-overview
+1. Entra ID – Public releases and announcements: https://learn.microsoft.com/en-us/entra/fundamentals/whats-new
 2. Unified security operations (Defender portal) – What's new: https://learn.microsoft.com/en-us/unified-secops/whats-new
 3. Microsoft Defender XDR – What's new: https://learn.microsoft.com/en-us/defender-xdr/whats-new
 4. Microsoft Defender for Endpoint – What's new: https://learn.microsoft.com/en-us/defender-endpoint/whats-new-in-microsoft-defender-endpoint
@@ -64,3 +64,9 @@ Title, Service, Category, Type, Summary, Date, Link
 3. No extra commentary beyond the intro paragraph and per-service sections.
 
 Save the report in this folder as `M365 Security Whats New-YYYY-MM-DD.md`, using the Stockholm run date. Follow RUNBOOK.md for validation and publishing.
+
+### Source availability and redirects
+
+Read the article body and target-month headings; a generic Microsoft Learn sign-in banner is not proof that the article is unreadable. Follow official Learn links to the public release-note page when the listed URL is an overview. Record the resolved source URL.
+
+Distinguish three outcomes per service: verified target-month items; a successfully read source without a target-month section/items; or an inaccessible, redirected or stale source that cannot establish the target month's coverage. For the third outcome, say what could not be verified. Do not use the no-items sentence for a failed fetch or a redirect to another product. Where two sources resolve to the same page, refer to the primary product section instead of duplicating the same table.

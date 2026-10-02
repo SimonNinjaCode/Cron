@@ -60,3 +60,9 @@ Final answer: up to 10 insight tables, plus an executive summary; fewer if evide
 Only assign MITRE ATT&CK techniques, Zero Trust pillars or MCRA components when supported by the described behavior and the relevant framework. Mark analyst mappings as interpretation. Do not invent a CVE, actor attribution or a tenant patch action for a Microsoft-managed cloud service.
 
 Save the report in this folder as `M365 Threat Intelligence Report-YYYY-MM-DD.md`, using the Stockholm run date. Follow RUNBOOK.md for validation and publishing.
+
+### Relevance gate
+
+Include an adjacent SaaS, email or infrastructure vulnerability only when the source documents a concrete M365, Entra ID or Azure integration, abuse path or impact. Do not include a generic vulnerability solely because an organization might deploy that product in a hypothetical hybrid environment. If a publisher has fewer than two qualifying articles, leave a clearly stated gap rather than weakening the scope. Opinions are context, not evidence of an observed campaign.
+
+Before publishing, verify every introduction, risk, strategic initiative, action and executive-summary paragraph is Swedish. English field labels, article titles, product names and technical terms are allowed. Cross-reference repeated campaigns across publishers and distinguish article count from distinct campaign count; do not call repeated coverage independent threats.
