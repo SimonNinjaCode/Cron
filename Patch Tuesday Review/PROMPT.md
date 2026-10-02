@@ -40,3 +40,11 @@ Generate the monthly Microsoft Patch Tuesday review for the current month and de
 This runs at 08:00 Stockholm on the Wednesday immediately after the second Tuesday. Verify the current-month release is available before writing. If it is unavailable, report a blocked run rather than relabeling the previous month.
 
 Save the report in this folder as `Patch Tuesday Review-YYYY-MM-DD.md`, using the Stockholm run date. Follow RUNBOOK.md for validation and publishing.
+
+### Primary inventory and completeness
+
+Do not treat the JavaScript Security Update Guide as the only source of MSRC data. Microsoft documents its public CVRF API at https://github.com/microsoft/MSRC-Microsoft-Security-Updates-API. Retrieve the monthly document through `https://api.msrc.microsoft.com/cvrf/v3.0/cvrf/YYYY-Mmm` with `Accept: application/json`, keeping TLS verification enabled. Parse the response locally if it is too large for the web reader. Confirm the document title and initial release date before using it.
+
+Define and state the Patch Tuesday release-date/product scope before counting: the monthly CVRF document can also contain out-of-band updates, Chromium and third-party package fixes. Count distinct CVE IDs, not product rows or remediation records. Use official publication/revision and remediation dates, severity, CVSS and exploitability flags; separate later-month additions and Edge/Chromium coverage. State any unresolved discrepancy between publisher summaries and the current primary inventory.
+
+Build a complete union of in-scope CVEs whose confirmed CVSS is at least 8.0 or whose Microsoft severity is Critical. Reconcile the output table ID set against that union before publishing. A handful of representative examples is not a completed Highest Rated section. Use fetched full CVE tables from secondary sources (for example SANS or BleepingComputer) to cross-check each listed CVE. Verify Customer Action against the official affected products/remediations; never assume all entries require customer-installed patches. If primary inventory or required cross-checks cannot be established, stop the publishing step and report the missing evidence instead of publishing an incomplete review as complete.

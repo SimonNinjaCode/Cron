@@ -3,15 +3,15 @@ layout:
   width: wide
 ---
 
-# M365 Threat Intelligence Report — September 2026
+# M365 Threat Intelligence Report — september 2026
 
-**Report Date:** 2026-10-02 (Europe/Stockholm)
-**Reporting Window:** 2026-07-01–2026-09-30
-**Audience:** Security architects · SOC leads · cyber leadership
+**Rapportdatum:** 2026-10-02 (Europe/Stockholm)
+**Sökfönster:** 2026-07-01–2026-09-30
+**Målgrupp:** Säkerhetsarkitekter · SOC-ansvariga · säkerhetsledning
 
 ## Sammanfattning
 
-September månads rapportering visar två tydliga molnrisker: identitetsangrepp som går från nätfiske till beständig session och datainsamling, samt komprometterade Azure-service principals med rättigheter att radera resurser. EvilTokens-materialet i fyra publikationer beskriver en och samma PhaaS-kampanj (Storm-2992), inte fyra kampanjer. Storm-3168/Jade Puffer-incidenten återges av fyra utgivare, men är en och samma Azure-intrångshändelse som Microsoft daterar till början av juni. Passkey-temat förekommer i tre artiklar om Microsofts observerade aktivitet sedan maj; dessa är överlappande rapportering om en kampanjmiljö och ska inte summeras som tre oberoende intrång.
+September månads rapportering visar två tydliga molnrisker: identitetsangrepp som går från nätfiske till beständig session och datainsamling, samt komprometterade Azure-service principals med rättigheter att radera resurser. I tabellurvalet återger tre utgivare EvilTokens-kampanjen (Storm-2992) och tre utgivare samma Storm-3168/Jade Puffer-intrång i Azure, som Microsoft daterar till början av juni. Två tabellinsikter beskriver överlappande passkey-tematiserad aktivitet sedan maj. Återpublicerad rapportering räknas inte som ytterligare kampanjer eller intrång.
 
 Övriga separata signaler är BigBear 2.0:s AiTM-sessionstölder och en Unicode-baserad phishingkampanj som Microsoft beskriver i Defender for Office 365-telemetri. Prioritera kontroll av device-code-flöden, korrelation mellan identitets- och molndatahändelser, minst privilegium för arbetsbelastningsidentiteter samt oberoende skydd för återställning. MCRA-, Zero Trust- och ATT&CK-kopplingar nedan är analytikertolkningar om inte annat uttryckligen anges.
 
