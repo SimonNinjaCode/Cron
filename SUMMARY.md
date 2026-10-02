@@ -88,6 +88,7 @@
   * [Microsoft AI Brief — 9 September 2026](<Microsoft AI Brief/Microsoft AI Brief-2026-09-09.md>)
   * [Microsoft AI Brief — 16 September 2026](<Microsoft AI Brief/Microsoft AI Brief-2026-09-16.md>)
   * [Microsoft AI Brief — 23 September 2026](<Microsoft AI Brief/Microsoft AI Brief-2026-09-23.md>)
+  * [Microsoft AI Brief — 2 oktober 2026](<Microsoft AI Brief/Microsoft AI Brief-2026-10-02.md>)
 * [Patch Tuesday Review](<Patch Tuesday Review/README.md>)
   * [Prompt](<Patch Tuesday Review/PROMPT.md>)
   * [Exempel](<Patch Tuesday Review/EXAMPLES.md>)
