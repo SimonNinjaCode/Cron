@@ -51,6 +51,7 @@
   * [M365 Threat Intelligence Report, 2026-08-01](<M365 Threat Intelligence Report/M365 Threat Intelligence Report-2026-08-01.md>)
   * [M365 Threat Intelligence Report, 2026-08-31](<M365 Threat Intelligence Report/M365 Threat Intelligence Report-2026-08-31.md>)
   * [M365 Threat Intelligence Report — August 2026](<M365 Threat Intelligence Report/M365 Threat Intelligence Report-2026-09-01.md>)
+  * [M365 Threat Intelligence Report — September 2026](<M365 Threat Intelligence Report/M365 Threat Intelligence Report-2026-10-02.md>)
 * [Message Center Digest](<Message Center Digest/README.md>)
   * [Prompt](<Message Center Digest/PROMPT.md>)
   * [Exempel](<Message Center Digest/EXAMPLES.md>)
