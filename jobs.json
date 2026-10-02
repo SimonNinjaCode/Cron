@@ -1,0 +1,79 @@
+[
+  {
+    "topic": "Generative AI Brief",
+    "name": "Cron - Generative AI Brief",
+    "folder": "Generative AI Brief",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Weekly \u2014 Wednesday 08:00",
+    "rrule": "FREQ=WEEKLY;BYDAY=WE;BYHOUR=8;BYMINUTE=0;BYSECOND=0",
+    "automationId": "cron-generative-ai-brief"
+  },
+  {
+    "topic": "Microsoft AI Brief",
+    "name": "Cron - Microsoft AI Brief",
+    "folder": "Microsoft AI Brief",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Weekly \u2014 Wednesday 09:00",
+    "rrule": "FREQ=WEEKLY;BYDAY=WE;BYHOUR=9;BYMINUTE=0;BYSECOND=0",
+    "automationId": "cron-microsoft-ai-brief"
+  },
+  {
+    "topic": "Message Center Digest",
+    "name": "Cron - Message Center Digest",
+    "folder": "Message Center Digest",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Monthly \u2014 1st at 06:00",
+    "rrule": "FREQ=MONTHLY;BYMONTHDAY=1;BYHOUR=6;BYMINUTE=0;BYSECOND=0",
+    "automationId": "cron-message-center-digest"
+  },
+  {
+    "topic": "M365 Security Whats New",
+    "name": "Cron - M365 Security Whats New",
+    "folder": "M365 Security Whats New",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Monthly \u2014 1st at 07:00",
+    "rrule": "FREQ=MONTHLY;BYMONTHDAY=1;BYHOUR=7;BYMINUTE=0;BYSECOND=0",
+    "automationId": "monthly-microsoft-security-whats-new-report"
+  },
+  {
+    "topic": "M365 Threat Intelligence Report",
+    "name": "Cron - M365 Threat Intelligence Report",
+    "folder": "M365 Threat Intelligence Report",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Monthly \u2014 1st at 08:00",
+    "rrule": "FREQ=MONTHLY;BYMONTHDAY=1;BYHOUR=8;BYMINUTE=0;BYSECOND=0",
+    "automationId": "cron-m365-threat-intelligence-report"
+  },
+  {
+    "topic": "Windows Monthly Brief",
+    "name": "Cron - Windows Monthly Brief",
+    "folder": "Windows Monthly Brief",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Monthly \u2014 1st at 09:00",
+    "rrule": "FREQ=MONTHLY;BYMONTHDAY=1;BYHOUR=9;BYMINUTE=0;BYSECOND=0",
+    "automationId": "windows-update-brief"
+  },
+  {
+    "topic": "Patch Tuesday Review",
+    "name": "Cron - Patch Tuesday Review",
+    "folder": "Patch Tuesday Review",
+    "model": "gpt-6-luna",
+    "reasoningEffort": "medium",
+    "timezone": "Europe/Stockholm",
+    "schedule": "Monthly \u2014 day after second Tuesday at 08:00",
+    "rrule": "FREQ=MONTHLY;BYDAY=WE;BYMONTHDAY=9,10,11,12,13,14,15;BYHOUR=8;BYMINUTE=0;BYSECOND=0",
+    "automationId": "cron-patch-tuesday-review"
+  }
+]

@@ -1,0 +1,34 @@
+---
+layout:
+  width: wide
+---
+
+# Microsoft AI Brief
+
+Microsoft AI-nyheter för IT, säkerhet och verksamhetsbeslut.
+
+**Codex-jobb:** `Cron - Microsoft AI Brief`  
+**Modell:** Luna 6.0 (`gpt-6-luna`), medium reasoning  
+**Schema:** Weekly — Wednesday 09:00, `Europe/Stockholm`  
+**Rapport:** `Microsoft AI Brief-YYYY-MM-DD.md`
+
+- [Prompt](PROMPT.md)
+- [Exempel](EXAMPLES.md)
+- [Gemensamma körinstruktioner](../RUNBOOK.md)
+- [Mermaid-källfil](diagram.mmd)
+
+## Process
+
+```mermaid
+flowchart TD
+    A["Weekly — Wednesday 09:00 - Europe/Stockholm"] --> B["Read RUNBOOK.md and PROMPT.md"]
+    B --> C["Search Microsoft AI sources for the last 7 days"]
+    C --> D["Rank security, enterprise platform, agents and infrastructure"]
+    D --> E["Write sourced enterprise brief"]
+    E --> F["Save dated Markdown report"]
+    F --> G["Register in SUMMARY.md"]
+    G --> H{"GitBook validation passes?"}
+    H -- No --> I["Fix report or report failure"]
+    H -- Yes --> J["Commit job files and SUMMARY.md; push to Cron main"]
+    J --> K["GitBook Git Sync imports main when connected"]
+```

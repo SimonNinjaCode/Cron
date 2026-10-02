@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+**/.DS_Store
+.logs
+logs/
+
+# Claude Code temp (plan files, session cache)
+~/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.pyc
+*.pyo
+
+# Runtime logs
+logs/runtime/
+
+# Environment / secrets
+.env
+.env.local

@@ -1,0 +1,11 @@
+flowchart TD
+    A["Monthly — 1st at 07:00 - Europe/Stockholm"] --> B["Read RUNBOOK.md and PROMPT.md"]
+    B --> C["Read 12 Microsoft Learn release-note pages"]
+    C --> D["Select only previous calendar month"]
+    D --> E["Write one table per service"]
+    E --> F["Save dated Markdown report"]
+    F --> G["Register in SUMMARY.md"]
+    G --> H{"GitBook validation passes?"}
+    H -- No --> I["Fix report or report failure"]
+    H -- Yes --> J["Commit job files and SUMMARY.md; push to Cron main"]
+    J --> K["GitBook Git Sync imports main when connected"]

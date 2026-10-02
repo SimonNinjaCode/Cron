@@ -1,0 +1,34 @@
+---
+layout:
+  width: wide
+---
+
+# Patch Tuesday Review
+
+Prioriterad granskning av Microsofts månatliga säkerhetsuppdateringar.
+
+**Codex-jobb:** `Cron - Patch Tuesday Review`  
+**Modell:** Luna 6.0 (`gpt-6-luna`), medium reasoning  
+**Schema:** Monthly — day after second Tuesday at 08:00, `Europe/Stockholm`  
+**Rapport:** `Patch Tuesday Review-YYYY-MM-DD.md`
+
+- [Prompt](PROMPT.md)
+- [Exempel](EXAMPLES.md)
+- [Gemensamma körinstruktioner](../RUNBOOK.md)
+- [Mermaid-källfil](diagram.mmd)
+
+## Process
+
+```mermaid
+flowchart TD
+    A["Monthly — day after second Tuesday at 08:00 - Europe/Stockholm"] --> B["Read RUNBOOK.md and PROMPT.md"]
+    B --> C["Read current-month MSRC release"]
+    C --> D["Cross-check CVEs and exploitation with analysis sources"]
+    D --> E["Write patch priorities and confirmed CVE tables"]
+    E --> F["Save dated Markdown report"]
+    F --> G["Register in SUMMARY.md"]
+    G --> H{"GitBook validation passes?"}
+    H -- No --> I["Fix report or report failure"]
+    H -- Yes --> J["Commit job files and SUMMARY.md; push to Cron main"]
+    J --> K["GitBook Git Sync imports main when connected"]
+```
