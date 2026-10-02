@@ -7,7 +7,7 @@ layout:
 
 Sju schemalagda Codex-jobb för Microsoft 365, säkerhet och AI. Alla använder **Luna 6.0** (`gpt-6-luna`) med medium reasoning och tider i **Europe/Stockholm**.
 
-Rapporter skrivs som Markdown, valideras och pushas till [SimonNinjaCode/Cron](https://github.com/SimonNinjaCode/Cron). GitBook läser `main` när Git Sync är anslutet. `.gitbook.yaml` anger innehållsstruktur; den skapar inte anslutningen.
+Rapporter skrivs som Markdown, valideras och pushas till [SimonNinjaCode/Cron](https://github.com/SimonNinjaCode/Cron). [Cybersecurity Insights](https://app.gitbook.com/o/gqw87pMWZX8zrWGYghvh/sites/site_dOTMc/s/1KDa9uHS297J5EuA9mLv/) är anslutet med Git Sync till `main` (verifierat 2026-10-02). `.gitbook.yaml` anger innehållsstruktur; den skapar inte anslutningen.
 
 ## Jobb
 

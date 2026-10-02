@@ -9,6 +9,10 @@ Repository: [SimonNinjaCode/Cron](https://github.com/SimonNinjaCode/Cron)
 Branch: `main`  
 Konfiguration: `.gitbook.yaml` med `root: ./`, `readme: README.md` och `summary: SUMMARY.md`.
 
+## Status
+
+Ansluten 2026-10-02: [Cybersecurity Insights](https://app.gitbook.com/o/gqw87pMWZX8zrWGYghvh/sites/site_dOTMc/s/1KDa9uHS297J5EuA9mLv/) importerar repositoryroten från Cron/main. Första importen visade Synced och startsidan samt alla sju jobb verifierades i GitBook. Sektionen är ett utkast i den befintliga GitBook-sajten; sajten är ännu inte publicerad.
+
 ## Anslut Git Sync
 
 1. Öppna avsett GitBook Space och välj Git Sync → GitHub.
