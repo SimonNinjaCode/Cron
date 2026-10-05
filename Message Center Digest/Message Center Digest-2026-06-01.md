@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# Microsoft 365 Message Center Digest — Security & Compliance
+# Message Center Digest — May 2026
 **Reporting period: May 2026 | Generated: 2026-06-01**
 
 This digest covers **17 security and compliance items** from the Microsoft 365 Message Center with a published date or material rollout milestone (GA, preview, opt-out, enforcement start) in May 2026. Items are sorted by date ascending.

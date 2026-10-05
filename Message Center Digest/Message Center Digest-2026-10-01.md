@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# Microsoft 365 Message Center — Security & Compliance Digest
+# Message Center Digest — October 2026
 **Period:** 2026-09-01 → 2026-10-01 | **Generated:** 2026-10-01
 
 ---

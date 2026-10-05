@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# M365 Security — What's New: May 2026
+# M365 Security — May 2026
 
 **Report date:** 2026-06-01  
 **Target month:** May 2026  

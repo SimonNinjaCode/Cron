@@ -19,7 +19,7 @@ layout:
     visible: true
 ---
 
-# M365 Security — What's New: June 2026
+# M365 Security — June 2026
 
 > Rolling 30-day window: **2026-06-01 – 2026-07-01**. Only items explicitly listed under "June 2026" sections on the respective Microsoft Learn What's New pages are included.
 

@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# M365 Security What's New – May 2026
+# M365 Security — May 2026
 
 **Target month:** May 2026 | **Run date:** 2026-06-12
 **Sources used (12):** Entra ID, Unified SecOps portal, Defender XDR, Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Defender Vulnerability Management, Intune, Microsoft Sentinel, Defender for Cloud, Microsoft Purview

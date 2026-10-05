@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# M365 Security — What's New (September 2026)
+# M365 Security — September 2026
 
 > Rolling 30-day window: **2026-09-01 → 2026-10-01**
 > Sources: Microsoft Learn "What's new" pages for each service listed below.

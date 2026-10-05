@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# Microsoft 365 Message Center – Security & Compliance Digest
+# Message Center Digest — June 2026
 **Reporting period:** May 13 – Jun 12, 2026 (rolling 30 days) | **Items included:** 31 | **Run date:** 2026-06-12
 
 ---

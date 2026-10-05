@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# Microsoft 365 Message Center Digest — Security & Compliance
+# Message Center Digest — July 2026
 
 **Window:** 2026-06-01 → 2026-07-01 | **Run date:** 2026-07-01 | **Timezone:** Europe/Berlin (CEST)
 

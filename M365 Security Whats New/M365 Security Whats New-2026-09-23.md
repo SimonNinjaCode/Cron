@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# M365 Security — What's New: September 2026
+# M365 Security — September 2026
 
 **Reporting window:** 2026-08-24 through 2026-09-23 (rolling 30 days ending on run date 2026-09-23, Europe/Berlin)
 **Sources:** Microsoft Learn What's New pages for all 12 services listed below.

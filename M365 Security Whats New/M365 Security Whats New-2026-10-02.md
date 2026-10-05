@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# M365 Security What's New — september 2026 (2026-10-02)
+# M365 Security — September 2026
 
 September 2026. Sammanställningen bygger enbart på de angivna Microsoft Learn-sidorna. Entra-sidan är läsbar men saknar en septembersektion och det senaste synliga avsnittet gäller juni 2026. Intune-sidan har flyttat till en ny URL och redovisar poster per vecka. Defender Vulnerability Management omdirigerar till Defender for Endpoint, så separat VM-täckning kan inte fastställas. Unified security operations omdirigerar till Defender XDR och korshänvisas där utan dubblering.
 

@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# Microsoft 365 Message Center Digest — Security & Compliance
+# Message Center Digest — April 2026
 ## April 2026 | Published 2026-05-18
 
 This digest covers **28 security and compliance items** from the Microsoft 365 Message Center where the published date or a material rollout milestone (GA, preview start, opt-out deadline, enforcement start) fell in April 2026. Items are drawn from Microsoft Purview, Microsoft Entra, Microsoft Defender XDR, Microsoft Defender for Office 365, Microsoft Intune, and related services.

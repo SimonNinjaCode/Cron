@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# M365 Security — What's New
+# M365 Security — August 2026
 
 **Report period:** July 2026 – August 2026 (rolling 30-day window: 2026-07-14 → 2026-08-13)
 **Sources:** 12 Microsoft Learn "What's new" pages (Entra ID, Unified SecOps, Defender XDR, Defender for Endpoint, Defender for Office 365, Defender for Identity, Defender for Cloud Apps, Defender Vulnerability Management, Intune, Sentinel, Defender for Cloud, Purview)

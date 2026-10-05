@@ -59,9 +59,11 @@ Title, Service, Category, Type, Summary, Date, Link
 
 ### Output structure
 
-1. Begin with a short intro line stating the target month/year and that the information is based solely on the specified Microsoft Learn pages.
+1. After the required GitBook frontmatter, use exactly `# M365 Security — <Month Year>` as the H1, with the target (previous calendar) month written in English, for example `# M365 Security — September 2026`. Keep the run date in the filename or report metadata, not in the H1. Then add a short intro line stating the target month/year and that the information is based solely on the specified Microsoft Learn pages.
 2. For each service in the order listed above, render a second-level heading "## <Service Name>" followed by either the markdown table or the "no items" sentence.
 3. No extra commentary beyond the intro paragraph and per-service sections.
+
+If another report for the same target month is already listed in `SUMMARY.md`, keep both H1 headings in the standard format and add ` · <run day> <short run month>` to both sidebar labels after registration (for example `M365 Security — September 2026 · 2 Oct`). Do not change report filenames or remove the earlier entry.
 
 Save the report in this folder as `M365 Security Whats New-YYYY-MM-DD.md`, using the Stockholm run date. Follow RUNBOOK.md for validation and publishing.
 

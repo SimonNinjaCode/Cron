@@ -3,7 +3,7 @@ layout:
   width: wide
 ---
 
-# Microsoft 365 Message Center — Security & Compliance Digest — 2026-10-02
+# Message Center Digest — October 2026
 **Period:** 2026-09-02–2026-10-02 | **Generated:** 2026-10-02 (Europe/Stockholm)
 
 Rapporten täcker den rullande 30-dagarsperioden. Datumet är publiceringsdatum när det ligger i perioden; annars anges den verifierade milstolpen. Action Required sorteras efter faktisk deadline. Utgångna datum är markerade som **passerade**. Det visar att källans datum har passerat; rapporten kan inte avgöra om en viss organisation redan har genomfört åtgärden. Relativa milstolpar utan fast datum ligger sist.
