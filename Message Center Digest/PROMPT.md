@@ -43,8 +43,15 @@ Include items where the published date OR a material rollout milestone (GA, prev
 - **Summary**: 1–2 sentences focused on what changes for admins/users, including default state and key dates.
 - **Link**: for MC IDs `https://admin.microsoft.com/Adminportal/Home#/MessageCenter/:/messages/<MCID>`; for RM IDs `https://www.microsoft.com/en-us/microsoft-365/roadmap?id=<numeric>`. Anchor text = the ID itself. Never fabricate IDs.
 
-Write a dated heading. Use an Action Required table sorted by actual action deadline (earliest first, unknown last), and an other-changes table sorted by the inclusion date descending. Include an explicit deadline column in Action Required; distinguish overdue from upcoming deadlines. Highlight action-required deadlines. Include the fetched public aggregator URL as evidence alongside the admin/roadmap link. Never imply the aggregator provides complete tenant coverage.
+Write a dated heading. Use an Action Required table sorted by actual action deadline (earliest first, unknown last), and an other-changes table sorted by the inclusion date descending. Distinguish elapsed deadlines from upcoming deadlines; highlight action-required deadlines. Include the fetched public aggregator URL as evidence alongside the admin/roadmap link. Never imply the aggregator provides complete tenant coverage.
+
+### Required table columns (exact order)
+
+- Action Required: `Title | Service | Category | Type | Summary | Date | Deadline | Public evidence`
+- Other changes: `Title | Service | Category | Type | Summary | Date | Public evidence`
+
+Use the per-item Date for the publication or in-window milestone that qualified the item. Deadline is the separate action deadline; use `Unknown` when no exact deadline is verified. Mark elapsed deadlines as passed, not as proof that a customer is overdue. Start the Title cell with the human-readable title, followed by the MC/RM ID linked to the item's admin Message Center or Microsoft 365 roadmap URL. Put the fetched public detail-page URL in Public evidence. Do not merge Title, Date and link into one Change cell or Service, Category and Type into one Classification cell. Older examples may use that grouped layout; this column order takes precedence for new reports.
 
 Save the report in this folder as `Message Center Digest-YYYY-MM-DD.md`, using the Stockholm run date. Follow RUNBOOK.md for validation and publishing.
 
-For GitBook readability, combine Date, ID/link and Title in a Change column, and Service, Category and Type in a Classification column. Keep Summary and Public evidence separate. The action table adds Deadline as its first column. Preserve every per-item field within those cells; use `<br>` between metadata lines. Mark elapsed dates as passed, not as proof that a customer is overdue. Use one Type value and describe separate preview/GA milestones in Summary. Spell out units and whether a licensing cap applies per tenant or per user.
+For GitBook readability, keep each cell concise and use `<br>` only for secondary metadata within a cell, such as an MC/RM ID under a linked title. Use one Type value and describe separate preview/GA milestones in Summary. Spell out units and whether a licensing cap applies per tenant or per user.
