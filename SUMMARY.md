@@ -30,6 +30,7 @@
   * [Generative AI Brief — 16 September 2026](<Generative AI Brief/Generative AI Brief-2026-09-16.md>)
   * [Generative AI Brief — 23 September 2026](<Generative AI Brief/Generative AI Brief-2026-09-23.md>)
   * [Generative AI Brief — 2 oktober 2026](<Generative AI Brief/Generative AI Brief-2026-10-02.md>)
+  * [Generative AI Brief — 7 oktober 2026](<Generative AI Brief/Generative AI Brief-2026-10-07.md>)
 * [M365 Security — What's New](<M365 Security Whats New/README.md>)
   * [Prompt](<M365 Security Whats New/PROMPT.md>)
   * [Exempel](<M365 Security Whats New/EXAMPLES.md>)
