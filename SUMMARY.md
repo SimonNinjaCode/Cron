@@ -71,6 +71,7 @@
   * [Message Center Digest — September 2026](<Message Center Digest/Message Center Digest-2026-09-23.md>)
   * [Message Center Digest — October 2026 · 1 Oct](<Message Center Digest/Message Center Digest-2026-10-01.md>)
   * [Message Center Digest — October 2026 · 2 Oct](<Message Center Digest/Message Center Digest-2026-10-02.md>)
+  * [Message Center Digest — October 2026 · 14 Oct](<Message Center Digest/Message Center Digest-2026-10-14.md>)
 * [Microsoft AI Brief](<Microsoft AI Brief/README.md>)
   * [Prompt](<Microsoft AI Brief/PROMPT.md>)
   * [Exempel](<Microsoft AI Brief/EXAMPLES.md>)
